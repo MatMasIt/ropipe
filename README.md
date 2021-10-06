@@ -6,13 +6,17 @@ Default is integer to roman.
 ## Options 
 * -r : Roman to integer. Integer to roman is the default.
 ## Installation
-    1. Clone this repository
-    2. `cd` into it
-    3. run
-    ```sh
-    sudo bash install.sh
-    ```
-    (The program is compiled at this time, you may check the script and the program out beforehand)
+1. Clone this repository
+2. `cd` into it
+3. run
+```sh
+sudo bash install.sh
+```
+or
+```sh
+doas bash install.sh
+```
+(The program is compiled at this time, you may check the script and the program out beforehand)
 ## Examples
 Once installed, you can find sample files in the project dir.
 ```sh
