@@ -19,11 +19,31 @@ doas bash install.sh
 (The program is compiled at this time, you may check the script and the program out beforehand)
 ## Examples
 Once installed, you can find sample files in the project dir.
+
+---
+Example 1:
 ```sh
 ropipe < arabic.txt
 ```
+Result:
+```
+I
+X
+CXXIII
+CCCXXI
+```
+
+---
+Example 2:
 ```sh
 ropipe -r < roman.txt
+```
+Result:
+```
+4
+5
+7
+1200
 ```
 ## Manpage
 
