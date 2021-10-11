@@ -18,7 +18,6 @@ uninstall:
 ifneq ($(shell id -u), 0)
         @echo "You must be root to uninstall"
 else
-	mkdir -p /usr/local/share/man/man1/
 	echo "Removing man file"
 	rm -rf /usr/local/share/man/man1/ropipe.1
 	echo "Uninstalling binary"
