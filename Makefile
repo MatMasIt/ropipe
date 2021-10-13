@@ -23,3 +23,6 @@ else
 	echo "Uninstalling binary"
 	rm -rf /usr/bin/ropipe
 endif
+update:
+	git pull
+	make install
