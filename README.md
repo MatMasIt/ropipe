@@ -1,4 +1,7 @@
 # Ropipe
+
+![GitHub](https://img.shields.io/github/license/MatMasIt/ropipe)
+
 > Convert roman numbers to integers and vice-versa in pipes
 ## What is ropipe?
 Ropipe converts decimal integers to roman numbers and vice versa, reading from stdin and printing to stdout, it is meant to primarily be used in pipes.
