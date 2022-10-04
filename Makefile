@@ -16,7 +16,7 @@ else
 endif
 uninstall:
 ifneq ($(shell id -u), 0)
-        @echo "You must be root to uninstall"
+	@echo "You must be root to uninstall"
 else
 	echo "Removing man file"
 	rm -rf /usr/local/share/man/man1/ropipe.1
@@ -26,3 +26,4 @@ endif
 update:
 	git pull
 	make install
+
