@@ -1,35 +1,63 @@
+
 # Ropipe
 
-![GitHub](https://img.shields.io/github/license/MatMasIt/ropipe)
+![License](https://img.shields.io/github/license/MatMasIt/ropipe)
+![c](https://img.shields.io/badge/language-C-blue)
 
-> Convert roman numbers to integers and vice-versa in pipes
+> Convert Roman numbers to integers and vice-versa in pipes.
+
 ## What is ropipe?
-Ropipe converts decimal integers to roman numbers and vice versa, reading from stdin and printing to stdout, it is meant to primarily be used in pipes.
-Default is integer to roman.
-## Options 
-* -r : Roman to integer. Integer to roman is the default.
-## Installation
-1. Clone this repository
-2. `cd` into it
-3. run
-```sh
-sudo make install
-```
-or
-```sh
-doas make install
-```
 
-(The program is compiled at this time, you may check the script and the program out beforehand)
+Ropipe converts base-10 integers to Roman numbers and vice versa, reading from stdin and printing to stdout. It is designed to be used primarily in pipes. By default, it converts integers to Roman numbers.
+
+## Options
+
+- `-r`: Roman to integer conversion. Integer to Roman is the default behavior.
+- `-h`: Display help message and exit.
+- `-s`: Fail silently, with no output on invalid input.
+- `-q`: Accept quirky Roman numerals like IIII for IV.
+- `-k`: Don't quit on invalid input; continue processing subsequent inputs.
+
+
+You can use the options concatenated, like `-rsk` or individually, like `-r -s -k`.
+
+
+## Installation
+
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/MatMasIt/ropipe.git
+   cd ropipe
+   ```
+
+2. Compile and install:
+
+   ```sh
+   sudo make install
+   ```
+
+   or
+
+   ```sh
+   doas make install
+   ```
+
+   The program is compiled during installation. You may review the script and the program before proceeding.
+
 ## Examples
-Once installed, you can find sample files in the project dir.
+
+Once installed, you can use `ropipe` in your shell commands. Below are some examples:
 
 ---
-Example 1:
+
+**Example 1:**
+
 ```sh
 ropipe < arabic.txt
 ```
-Result:
+
+**Result:**
+
 ```
 I
 X
@@ -38,26 +66,38 @@ CCCXXI
 ```
 
 ---
-Example 2:
+
+**Example 2:**
+
 ```sh
 ropipe -r < roman.txt
 ```
-Result:
+
+**Result:**
+
 ```
 4
 5
 7
 1200
 ```
+
 ## Manpage
 
-A manpage is installed alongside the program, try running `man ropipe`
+A manpage is installed alongside the program. You can access it by running:
+
+```sh
+man ropipe
+```
 
 ## Updates
 
-There is no automatic update system as of yet, you are advised to regularly visit https://github.com/MatMasIt/ropipe, download and re-run the installer in order to get updates
+There is no automatic update system currently implemented. Please visit [ropipe GitHub repository](https://github.com/MatMasIt/ropipe) regularly to check for updates. To update, download the latest version and re-run the installer.
+
+Nontheless, it's not a program that one would expect to change often, so manual updates should be rare.
 
 ## Make commands
-* `make`: compile ropipe
-* `make install`: install ropipe
-* `make uninstall`: uninstall ropipe
+
+- `make`: compile ropipe
+- `make install`: install ropipe
+- `make uninstall`: uninstall ropipe

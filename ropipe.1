@@ -1,15 +1,26 @@
-.TH ROPIPE 1 "06 October 2021"
+.TH ROPIPE 1 "07 July 2024"
 .SH NAME
-ropipe - Convert roman numbers to integers and vice-versa in pipes
+ropipe - Convert Roman numerals to integers and vice-versa in pipes
 .SH SYNOPSIS
-ropipe [ -r ]
+ropipe [ -rskqh ]
 .SH DESCRIPTION
-Ropipe converts decimal integers to roman numbers and vice versa, reading from stdin and printing to stdout, it is meant to primarily be used in pipes.
-Default is integer to roman.
+Ropipe converts decimal integers to Roman numerals and vice versa, reading from stdin and printing to stdout. It is meant to primarily be used in pipes. By default, it converts integers to Roman numerals.
 .SS Options
 .TP
 -r
-Roman to integer. Integer to roman is the default.
+Convert Roman numerals to integers. Integer to Roman is the default.
+.TP
+-s
+Fails silently, with no output on invalid input.
+.TP
+-k
+Don't quit on invalid input; continue processing subsequent inputs.
+.TP
+-q
+Accept quirky Roman numerals like IIII for IV.
+.TP
+-h
+Display this help message.
 .SH FILES
 .TP
 /usr/bin/ropipe
